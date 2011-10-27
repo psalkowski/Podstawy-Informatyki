@@ -59,9 +59,9 @@ int main(int argc, char **argv)
         printf("Tozsamosc (%g+%g)(%g-%g) = %g^2 - %g^2 jest prawdziwa!", a, b, a, b, a, b);
     else printf("Tozsamosc nie jest prawdziwa!");
     
-    ////////////// Cwiczenie 5.5 ////////////////////
+    ////////////// Cwiczenie 5.6 ////////////////////
 
-    printf("\n\n\tCwiczenie 5.5");
+    printf("\n\n\tCwiczenie 5.6");
     double x;
     double funkcja;
     printf("\nProgram policzy f(x) \nPodaj X: ");
