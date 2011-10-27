@@ -60,9 +60,48 @@ int main(int argc, char **argv)
             printf("Liczba %u nie spelnia nierownosci\n", a);
     }
     
+    ////////////// Cwiczenie 6.5 ////////////////////
+
+    printf("\n\n\tCwiczenie 6.5a\n");
+    double lewa, prawa;
+    int y;
+    lewa = 1;
+
+    for(int n = 1; ; n++)
+    {
+        lewa *= 1.02;
+        y = n;
+        y *= y;
+        prawa = 1000*y;
+        if(lewa > prawa)
+        {
+            printf("\nNajmniejsza liczba naturalna spelniajaca warunek to: %d", n-1);
+            break;
+        }
+    }
+
+    printf("\n\n\tCwiczenie 6.5b\n");
+    int x;
+    double nierownosc = 0;
+    double suma_nierownosci = 0;
+
+    printf("\nPodaj liczbe x ");
+    scanf("%u", &x);
+    fflush(stdin);
+    for(int n = 1; ; n++)
+    {
+        nierownosc += 1.0/n;
+        suma_nierownosci += nierownosc;
+        if(suma_nierownosci > x)
+        {
+            printf("Najmniejsza liczba naturalna spelniajaca nierownosc to %d", n-1);
+            break;
+        }
+    }
 
     ///////////////////////////////////////////////
 
+    printf("\n");
     system("pause");
     return 0;
 }
