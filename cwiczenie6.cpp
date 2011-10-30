@@ -128,7 +128,6 @@ int main(int argc, char **argv)
 
     printf("\n\n\tCwiczenie 6.5b\n");
     int z;
-    double nierownosc = 0;
     double suma_nierownosci = 0;
 
     do {
@@ -139,8 +138,7 @@ int main(int argc, char **argv)
     fflush(stdin);
     for(int n = 1; ; n++)
     {
-        nierownosc = 1.0/n;
-        suma_nierownosci += nierownosc;
+        suma_nierownosci += 1.0/n;
         if(suma_nierownosci > z)
         {
             printf("Najmniejsza liczba naturalna spelniajaca nierownosc to %d", n-1);
