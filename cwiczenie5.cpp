@@ -25,8 +25,9 @@ int main(int argc, char **argv)
     char tekst[255];
     printf("\tCwiczenie 5.1");
     printf("\nWpisz dowolny tekst: ");
-    scanf("%s", &tekst);                    // czy to powinno tak wygladac? moze trzeba dodac printf()?
+    gets(tekst);
     fflush(stdin);
+    printf("Wpisales: %s", tekst);
 
     ////////////// Cwiczenie 5.2 ////////////////////
 
