@@ -15,10 +15,10 @@ int main()
     for(int i = 0; ; i++)
     {
         printf("Podaj imie, nazwisko oraz adres studenta: ");
-	    fgets(buf, 80, stdin);
-	    fflush(stdin);
+        fgets(buf, 80, stdin);
+        fflush(stdin);
 
-	    if(buf[0] == 10) 
+        if(buf[0] == 10) 
             break;
 
         sscanf(buf, "%12s %12s %16s", student[i][0], student[i][1], student[i][2]);
